@@ -1,0 +1,364 @@
+/* Global Rules */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif; 
+    background-image: url(../images/landing.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 97, 95, 0.664);
+    width: 100%;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+}
+
+.global-section {
+    margin: 100px 25px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 1px #c3cac7;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.title {
+    text-align: center;
+    font-size: 3.4em;
+    color: white;
+    margin-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.title + p {
+    margin: 0;
+    text-align: center;
+}
+
+
+.global-icon {
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.circle-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 0px 0px 20px aliceblue;
+    margin: 75px 30px 0 -40px;
+}
+
+p {
+    line-height: 1.5;
+    color: cornsilk;
+    width: 75%;
+    margin: auto;
+}
+
+.img-thumbnail {
+    padding: 3px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+/* End Global Rules */
+
+/* Starting Header */
+header {
+    padding: 20px;
+    background-color: white;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+header .container img {
+    width: 60px;
+}
+
+header .container .links {
+    position: relative;
+}
+
+header .container .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 35px;
+}
+
+header .container .icon span {
+    background-color: #24484f;
+    height: 2px;
+    width: 100%;
+}
+
+header .container .icon span:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+header .container .icon span:nth-child(2) {
+    width: 60%;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+header .container .links:hover .icon span:nth-child(2) {
+    width: 100%;
+}
+
+header .container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    width: 280px;
+    border-radius: 15px;
+    top: calc(100% + 24px);
+    /*Top: 0;
+    itwillhidetheicon,Top: 100%;
+    willstartdirectlyaftertheiconend*/-webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: teal;
+    -webkit-border-radius: 15px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+header .container .links:hover ul {
+    visibility: visible;
+}
+
+header .container ul i {
+    position: absolute;
+    right: 10px;
+    top: -20px;
+    color: #36199f;
+    font-size: 17px;
+}
+
+header .container ul li a {
+    /*tomake(a)respectthefullspaceof(li)so,wecanhoverit*/
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    color: #444;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+header .container ul li a:hover {
+    color: white;
+    padding-left: 25px;
+}
+/* Ending Header */
+
+/* Starting Landing */
+.overlay .landing .intro-text {
+    text-align: center;
+    max-width: 100%;
+    margin-top: 150px;
+}
+
+.overlay .landing .intro-text h1 {
+    margin: 0;
+    font-size: 4em;
+    color: white;
+}
+
+.overlay .landing .intro-text p {
+    margin: 5px auto 0;
+    font-size: 18px;
+    color: #333;
+    width: 270px;
+    max-width: 100%;
+}
+/* Ending Landing */
+
+/* Starting Features */
+.features .container .meza {
+    text-align: center;
+} 
+
+.features .container .meza h2 {
+    color: #ffffffad;
+    font-weight: 800;
+    min-width: 317px;
+}
+/* Ending Features */
+
+/* Starting Services */
+.services .container .service {
+    text-align: center;
+}
+
+.services .container .col h2 {
+    color: #c5dad9;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.services .container .col p {
+    margin-bottom: 60px;
+}
+
+.services .container .col .under-p {
+    margin-bottom: 0;
+}
+/* Ending Services */
+
+/* starting Portfolio */
+.portfolio .circle-heading {
+    margin: auto;
+}
+
+.portfolio .grid {
+    margin-top: 50px;
+    padding: 15px;
+}
+
+.portfolio .card {
+    text-align: center;
+}
+
+.portfolio .card img {
+    max-width: 100%;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.portfolio .card h3 {
+    color: #c5dad9;
+}
+/* Ending Portfolio */
+
+/* starting About */
+.about .container {
+    display: flex;
+}
+.about .container .circle-heading {
+    min-width: 300px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.about .container .text {
+    margin: auto;
+}
+
+.about .container .text p {
+    margin-top: 0;
+    line-height: 2;
+    text-align: center;
+}
+
+.about .container .text hr {
+    width: 220px;
+    color: wheat;
+    margin: 20px auto;
+}
+/* Ending About */
+
+/* Starting Contact */
+.contact .container .info,
+.contact .container .social {
+    text-align: center;
+}
+
+.contact .container .social {
+    padding: 15px;
+}
+
+.contact .container .label {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.contact .container .link {
+    text-decoration: none;
+    font-size: 25px;
+    color: #10CAB7;
+    display: block;
+    margin-top: 10px;
+}
+
+.contact .container .social .global-icon {
+    color: #10CAB7;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+}
+
+.contact .container p {
+    text-align: center;
+}
+/* Ending Contact */
+
+/* Starting Footer */
+footer {
+    text-align: center;
+}
+
+footer p span {
+    color: #10CAB7;
+}
+/* Ending Footer */
