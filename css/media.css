@@ -1,0 +1,110 @@
+/* Start Phone Screen */
+@media (max-width: 767px) {
+    p {
+        width: 75%;
+        margin: 0 auto;
+    }
+    
+    .container {
+        margin-left: 15px;
+    }
+    
+    .grid {
+        grid-template-columns: none;
+    }
+    
+    .circle-heading {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .circle-heading h2 {
+        font-size: 2.6em;
+    }
+    
+    .circle-heading p {
+        font-size: 10px;
+    }
+    
+    .features .container .meza h2 {
+        min-width: 0;
+    }
+    
+    .services .circle-heading {
+        margin: -50px auto 20px;
+    }
+    
+    .services .container .col .under-p {
+        margin-bottom: 60px;
+    }
+    
+    .services .container .under-p.final {
+        margin-bottom: 0;
+    }
+    
+    .portfolio .card img {
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+    
+    .about .container {
+        flex-direction: column;
+    }
+    
+    .about .container .circle-heading {
+        margin: auto;
+        min-width: 200px;
+    }
+    
+    .about .container .text {
+        margin-top: 70px;
+    }
+    
+    .about .container .text hr {
+        width: 60%;
+    }
+    
+    .contact .container .label {
+        font-size: 17px;
+    }
+    
+    .contact .container .link {
+        font-size: 18px;
+    }
+    
+    .contact .container .social .global-icon {
+        width: 55%;
+    }
+    
+    .contact .container .social .global-icon i {
+        font-size: 30px;
+    }
+    
+    .contact .container .social .global-icon i:not(:last-of-type) {
+        margin-right: 20px;
+    }
+}
+/* End Phone Screen */
+
+/* Start Small&Medium Screen */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        width: 85%;
+    }
+    
+    .grid {
+        grid-template-columns: none;
+    }
+    
+    .services .circle-heading {
+        margin: -40px auto 50px;
+    }
+    
+    .about .container .circle-heading {
+        margin-left: -25px;
+    }       
+}
+/* End Small&Medium Screen */

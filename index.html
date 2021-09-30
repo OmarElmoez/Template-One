@@ -15,11 +15,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,700;0,800;1,500&display=swap" rel="stylesheet">
-    <!-- (Responsive) -->
-    <!-- Phone Screen -->
-    <link rel="stylesheet" href="css/phone.css" media="screen and (max-width: 767px)">
-    <!-- Small & Medium Screen -->
-    <link rel="stylesheet" href="css/smallAndMedium.css" media="screen and (min-width: 768px) and (max-width: 1199px)"> 
+    <!-- Media -->
+    <link rel="stylesheet" href="css/media.css">
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script> 
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
     <header>
@@ -192,6 +193,18 @@
         <footer>
             <p>&copy; 2021 <span>Leon</span> All Right Reserved</p>
         </footer>
+        <div class="dark-mode">
+            <i class="fas fa-moon dark-icon"></i>
+        </div>
+        <div class="light-mode">
+            <i class="fas fa-sun light-icon"></i>
+        </div>
+        <div class="go-up">
+            <i class="fas fa-angle-up fa-2x"></i>
+        </div>
     </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fun.js"></script>
 </body>
 </html>
